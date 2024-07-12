@@ -14,6 +14,8 @@ const io = new Server(server, {
   },
 });
 
+const getPort = 3000;
+
 const userManager = new UserManager();
 
 app.get("/", (req, res) => {
@@ -29,6 +31,6 @@ io.on("connection", (socket: Socket) => {
   });
 });
 
-server.listen(3000, () => {
-  console.log("listening on *:3000");
+server.listen(5173, () => {
+  console.log("listening on :3000");
 });
