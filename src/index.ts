@@ -32,5 +32,5 @@ io.on("connection", (socket: Socket) => {
 });
 
 server.listen(5173, () => {
-  console.log("listening on :3000");
+  console.log("listening on :5173");
 });
