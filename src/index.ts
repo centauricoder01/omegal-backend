@@ -14,7 +14,7 @@ const io = new Server(server, {
   },
 });
 
-const getPort = 3000;
+const port = process.env.PORT || 4000;
 
 const userManager = new UserManager();
 
@@ -31,6 +31,6 @@ io.on("connection", (socket: Socket) => {
   });
 });
 
-server.listen(5173, () => {
-  console.log("listening on :5173");
+server.listen(port, () => {
+  console.log("listening on :4000");
 });
